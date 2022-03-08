@@ -1,0 +1,64 @@
+<!-- <app-header></app-header> -->
+
+<div class="image-profile">
+  <div class="bg-buttons">
+    <button mat-mini-fab class="arrow">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <p>Profile</p>
+    <button mat-flat-button>Edit</button>
+  </div>
+  <div class="image">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="">
+
+    <button mat-mini-fab class="edit-image">
+      <mat-icon class="material-icons-outlined">
+      border_color</mat-icon></button>
+    
+    
+
+  </div>
+</div>
+ <form [formGroup]="userProfile">
+    <mat-form-field appearance="outline">
+      <mat-label>Business Name</mat-label>
+      <input matInput placeholder="Designsolution" formControlName="name">
+    </mat-form-field>
+
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="test@gmail.com" formControlName="email">
+    </mat-form-field>
+      
+
+    <mat-form-field appearance="outline">
+      <mat-label>Phone Number</mat-label>
+      <input matInput placeholder="+917707898775" formControlName="phone">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Buissness Adress</mat-label>
+      <input matInput placeholder="Nutmeg, Tanshikar Spice Farm, Goa" formControlName="adress">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Gender</mat-label>
+      <mat-select formControlName="gender">
+        <mat-option value="Male">Male</mat-option>
+        <mat-option value="Female">Female</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <br>
+    <button mat-flat-button color="primary" type="submit" (click)="createUserInFirebase()">Create User</button>
+    <br>
+    <br>
+    <button mat-flat-button color="primary" type="submit" (click)="getUsersInFirebase()">Get Users</button>
+    <br>
+    <br>
+    <button mat-flat-button color="primary" type="submit" (click)="deleteUserInFirebase()">Delete User</button>
+    <br>
+    <br>
+    <button mat-flat-button color="primary" type="submit" (click)="updateUserInFirebase()">Update User</button>
+  </form> 

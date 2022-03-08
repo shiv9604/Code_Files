@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "sstream": "c",
+        "10_STRCMP.C": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    },
+    "python.pythonPath": "C:\\Users\\shivk\\Anaconda3\\python.exe",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "liveServer.settings.multiRootWorkspaceName": ".vscode"
+}
